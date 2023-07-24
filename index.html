@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/00987df2f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Password Generator</title>
+  </head>
+  <style>
+    body {
+      background-color: #f9f7f7;
+      font-family: "Chewy", cursive;
+      letter-spacing: 0.8px;
+    }
+    h3 {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .main-container {
+      border: 1px solid black;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      background-color: #dbe2ef;
+      transform: translate(-50%, -50%);
+      height: 400px;
+      width: 350px;
+    }
+    #password-context {
+      width: 260px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid;
+      margin: auto;
+      line-height: 30px;
+    }
+    #copy-btn {
+      border: 1px solid;
+      width: 100px;
+      padding: 5px;
+      margin: auto;
+      margin-top: 20px;
+      text-align: center;
+      cursor: pointer;
+      color: #dbe2ef;
+      background-color: #3f72af;
+      border-radius: 10px;
+    }
+    #generate-password-btn {
+      border: 1px solid;
+      width: 200px;
+      padding: 10px;
+      margin: auto;
+      margin-top: 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #112d4e;
+      box-shadow: 1px 1px;
+      color: #dbe2ef;
+      user-select: none;
+    }
+  </style>
+
+  <body>
+    <div class="main-container">
+      <h3>Random Password Generator</h3>
+
+      <div id="password-context"></div>
+
+      <div id="copy-btn" onclick="copyText()">
+        <i class="fa-regular fa-copy"></i> Copy
+      </div>
+
+      <div id="generate-password-btn" onclick="generatePassword()">
+        <i class="fa-solid fa-bolt" style="color: #ffcf24"></i>
+        Generate Password
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
